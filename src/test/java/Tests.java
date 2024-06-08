@@ -1,4 +1,5 @@
 
+import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -63,6 +64,7 @@ public class Tests extends TestBase {
     }
     @Test
     public void setResume(){
+        Configuration.holdBrowserOpen = true;
         step("Открываем страницу с резюме", () -> {
             open("https://www.intexsoft.by/resume-generator/");
         });

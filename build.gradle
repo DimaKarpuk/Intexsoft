@@ -21,9 +21,6 @@ repositories {
     mavenCentral()
 }
 
-def allureVersion = "2.21.0",
-    selenideVersion = "6.19.1"
-
 dependencies {
     testImplementation"com.codeborne:selenide:7.2.3"
     testImplementation"org.junit.jupiter:junit-jupiter:5.10.0"
