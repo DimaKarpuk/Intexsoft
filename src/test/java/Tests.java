@@ -1,6 +1,7 @@
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
@@ -15,6 +16,7 @@ public class Tests extends TestBase {
     MainPage mainPage = new MainPage();
     CareerPage careerPage = new CareerPage();
     ResumePage resumePage = new ResumePage();
+    @Tag("ParameterizedTest")
     @CsvFileSource(resources = "testData/IntexsoftHeaderСareer.csv")
     @ParameterizedTest(name = "Тест кликабельности категории {0} на главной странице")
     void parameterizedCareerTest(String testData, String expected){
@@ -31,7 +33,8 @@ public class Tests extends TestBase {
             mainPage.expectValueTest(expected);
         });
     }
-    @DisplayName("Пойск вакансии в городе Гродно на позицию AQA")
+    @Tag("jobSearch")
+    @DisplayName("Поиск вакансии в городе Гродно на позицию AQA")
     @Test
     void applicantPathTest(){
         step("Кликаем на кнопку 'стать частью команды'", () -> {
@@ -43,25 +46,27 @@ public class Tests extends TestBase {
         step("Проверяем преход на страницу 'вакансии'", () -> {
             careerPage.checkingPageRelevanceTest("Вакансии");
         });
-        step("Кликаем по кнопке 'напровление' выподающего списка", () -> {
+        step("Кликаем по кнопке 'напровление' выпадающего списка", () -> {
             careerPage.tagAndTextTest("span","Все направления");
         });
-        step("Кликаем на позицию 'тестирование' в выподающем списке", () ->{
+        step("Кликаем на позицию 'тестирование' в выпадающем списке", () ->{
             careerPage.tagAndTextTest("span","Тестирование");
         });
-        step("Кликаем по кнопке 'город' выподающего списка", () -> {
+        step("Кликаем по кнопке 'город' выпадающего списка", () -> {
             careerPage.tagAndTextTest("span","Все города");
         });
-        step("Кликаем на кнопку 'Гродно' в выподающем списке", () -> {
+        step("Кликаем на кнопку 'Гродно' в выпадающем списке", () -> {
             careerPage.tagAndTextTest("span","Гродно");
         });
         step("Кликаем по результату AQA", () -> {
             careerPage.jobSelectionTest();
         });
-        step("Проверяем переход на с траеицу с описанием вакансии", () -> {
+        step("Проверяем переход на страницу с описанием вакансии", () -> {
             careerPage.checkingTransitionVacancyTest();
         });
     }
+    @Tag("resume")
+    @DisplayName("Заполнение резюме")
     @Test
     public void setResume(){
         Configuration.holdBrowserOpen = true;
