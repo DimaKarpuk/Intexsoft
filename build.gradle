@@ -41,6 +41,18 @@ tasks.withType(Test) {
     }
 }
 
-test {
-    useJUnitPlatform()
+task fullFilling_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("fullFill")
+    }
+}
+task partialFilling_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("partialFilling")
+    }
+}
+task incorrectFiling_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("incorrectFiling")
+    }
 }
