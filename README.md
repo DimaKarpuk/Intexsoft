@@ -2,7 +2,7 @@
 # Проект по автоматизации тестирования для компании [intexsoft]([https://www.intexsoft.by/])    
 <a href="https://www.zentist.io/"><img src="media/logo/images.png" width="150" height="150"  alt="IDEA"/></a>
 
-> Zentist — это платформа для управления доходами от стоматологического страхования. Наша миссия — помочь стоматологическим практикам и их пациентам мгновенно обрабатывать претензии по стоматологическому страхованию, способствуя росту доходов практики и повышению удовлетворенности пациентов обслуживанием.
+>  С 2001 года мы воплощаем идеи в программы и помогаем своим клиентам достигать успеха. В течение этих лет мы заслужили репутацию стабильной аутсорсинговой IT-компании
 
 ## **Содержание:**
 ____
@@ -25,15 +25,15 @@ ____
 ## <a name="Технологии и инструменты">**Технологии и инструменты:**</a>
 
 <p align="center">  
-<a href="https://www.jetbrains.com/idea/"><img src="media/logo/Intelij_IDEA.svg" width="50" height="50"  alt="IDEA"/></a>  
-<a href="https://www.java.com/"><img src="media/logo/Java.svg" width="50" height="50"  alt="Java"/></a>  
+<a href="https://www.jetbrains.com/idea/"><img src="resources/readMe/intellij-original.svg" width="50" height="50"  alt="IDEA"/></a>  
+<a href="https://www.java.com/"><img src="resources/readMe/java-original-wordmark.svg" width="50" height="50"  alt="Java"/></a>  
 <a href="https://github.com/"><img src="media/logo/Github.svg" width="50" height="50"  alt="Github"/></a>  
-<a href="https://junit.org/junit5/"><img src="media/logo/JUnit5.svg" width="50" height="50"  alt="JUnit 5"/></a>  
-<a href="https://gradle.org/"><img src="media/logo/Gradle.svg" width="50" height="50"  alt="Gradle"/></a>  
-<a href="https://selenide.org/"><img src="media/logo/Selenide.svg" width="50" height="50"  alt="Selenide"/></a>  
-<a href="https://aerokube.com/selenoid/"><img src="media/logo/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a>  
+<a href="https://junit.org/junit5/"><img src="resources/readMe/junit-original.svg" width="50" height="50"  alt="JUnit 5"/></a>  
+<a href="https://gradle.org/"><img src="resources/readMe/gradle-original.svg" width="50" height="50"  alt="Gradle"/></a>  
+<a href="https://selenide.org/"><img src="" width="50" height="50"  alt="Selenide"/></a>  
+<a href="https://aerokube.com/selenoid/"><"resources/readMe/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a>  
 <a href="ht[images](images)tps://github.com/allure-framework/allure2"><img src="media/logo/Allure.svg" width="50" height="50"  alt="Allure"/></a>
-<a href="https://www.jenkins.io/"><img src="media/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>  
+<a href="https://www.jenkins.io/"><img src="resources/readMe/jenkins-original.svg" width="50" height="50"  alt="Jenkins"/></a>  
  
 </p>
 
