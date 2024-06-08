@@ -25,15 +25,15 @@ ____
 ## <a name="Технологии и инструменты">**Технологии и инструменты:**</a>
 
 <p align="center">  
-<a href="https://www.jetbrains.com/idea/"><img src="resources/readMe/intellij-original.svg" width="50" height="50"  alt="IDEA"/></a>  
-<a href="https://www.java.com/"><img src="resources/readMe/java-original-wordmark.svg" width="50" height="50"  alt="Java"/></a>  
-<a href="https://github.com/"><img src="media/logo/Github.svg" width="50" height="50"  alt="Github"/></a>  
-<a href="https://junit.org/junit5/"><img src="resources/readMe/junit-original.svg" width="50" height="50"  alt="JUnit 5"/></a>  
-<a href="https://gradle.org/"><img src="resources/readMe/gradle-original.svg" width="50" height="50"  alt="Gradle"/></a>  
-<a href="https://selenide.org/"><img src="" width="50" height="50"  alt="Selenide"/></a>  
-<a href="https://aerokube.com/selenoid/"><"resources/readMe/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a>  
-<a href="ht[images](images)tps://github.com/allure-framework/allure2"><img src="media/logo/Allure.svg" width="50" height="50"  alt="Allure"/></a>
-<a href="https://www.jenkins.io/"><img src="resources/readMe/jenkins-original.svg" width="50" height="50"  alt="Jenkins"/></a>  
+<a href="https://www.jetbrains.com/idea/"><img src="readMe/intellij-original.svg" width="50" height="50"  alt="IDEA"/></a>  
+<a href="https://www.java.com/"><img src="readMe/java-original-wordmark.svg" width="50" height="50"  alt="Java"/></a>  
+<a href="https://github.com/"><img src="readMe/github-original.svg" width="50" height="50"  alt="Github"/></a>  
+<a href="https://junit.org/junit5/"><img src="readMe/junit-original.svg" width="50" height="50"  alt="JUnit 5"/></a>  
+<a href="https://gradle.org/"><img src="readMe/gradle-original.svg" width="50" height="50"  alt="Gradle"/></a>  
+<a href="https://selenide.org/"><img src="readMe/Selenide.svg" width="50" height="50"  alt="Selenide"/></a>  
+<a href="https://aerokube.com/selenoid/"><"readMe/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a>  
+<a href="ht[images](images)tps://github.com/allure-framework/allure2"><img src="readMe/Allure_Report.svg" width="50" height="50"  alt="Allure"/></a>
+<a href="https://www.jenkins.io/"><img src="readMe/jenkins-original.svg" width="50" height="50"  alt="Jenkins"/></a>  
  
 </p>
 
