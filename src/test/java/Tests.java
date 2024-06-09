@@ -61,6 +61,7 @@ public class Tests extends TestBase {
             careerPage.checkingTransitionVacancyTest();
         });
     }
+    @DisplayName("Заполнение резюме intexsoft")
     @Test
     public void setResume(){
         step("Открываем страницу с резюме", () -> {
