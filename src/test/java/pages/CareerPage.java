@@ -10,7 +10,8 @@ public class CareerPage {
     public final SelenideElement
     buttonViewVacancies = $("[href='https://www.intexsoft.by/vacancies/?part=1']"),
     checkingPageRelevance = $("h1"),
-    jobSelection = $("[href='https://www.intexsoft.by/jobs/aqa/']"),
+    jobSelection = $(withTagAndText("p","AQA")),
+    closeCheckBox = $(".nested-checkbox-select__label"),
     checkingTransitionVacancy = $(".hero-single-career__header");
     public void buttonViewVacanciesTest(){
         buttonViewVacancies.click();
@@ -23,6 +24,7 @@ public class CareerPage {
     }
     public void jobSelectionTest(){
         jobSelection.click();
+        closeCheckBox.click();
     }
     public void checkingTransitionVacancyTest(){
         checkingTransitionVacancy.shouldHave(text("AQA"));

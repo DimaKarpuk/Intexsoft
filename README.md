@@ -23,7 +23,7 @@ ____
 ### Технологии и инструменты:
 
 <p align="left">
-<a href="ht[images](images)tps://github.com/allure-framework/allure2"><img align="center" src="readMe/logo/Allure_Report.svg" height="40" width="40"></a>
+<a href="https://allurereport.org/"><img align="center" src="readMe/logo/Allure_Report.svg" height="40" width="40"></a>
 <a href="https://gradle.org/"><img align="center" src="readMe/logo/gradle-original.svg" height="40" width="40"></a>
 <a href="https://www.jetbrains.com/idea/"><img align="center" src="readMe/logo/intellij-original.svg" height="40" width="40"></a>
 <a href="https://www.java.com/"><img align="center" src="readMe/logo/java-original-wordmark.svg" height="40" width="40"></a>
@@ -67,14 +67,8 @@ gradle jobSearch_test
 gradle resume_test
 ```
 
-***Удалённый запуск через Jenkins:***
-```bash  
-clean test
-clean parameterized_test
-clean jobSearch_test
-clean resume_test
-"-DSelenoidURL=${SELENOID_URL}" 
-"-DBrowser=${BROWSER}" 
-"-DBrowserVersion=${BROWSER_VERSION}" 
-"-DBrowserSize=${BROWSER_SIZE}"
-```
+___
+<a id="allure"></a>
+## <img alt="Allure" height="25" src="media/logo/Allure.svg" width="25"/></a> <a name="Allure"></a>Allure [отчет](https://jenkins.autotests.cloud/job/011-mmuradov-JenkinsExercise-on-example-ZentistsTest/8/allure/)</a>
+___
+
