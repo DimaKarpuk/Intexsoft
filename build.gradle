@@ -21,9 +21,6 @@ repositories {
     mavenCentral()
 }
 
-def allureVersion = "2.21.0",
-    selenideVersion = "6.19.1"
-
 dependencies {
     testImplementation"com.codeborne:selenide:7.2.3"
     testImplementation"org.junit.jupiter:junit-jupiter:5.10.0"
@@ -44,6 +41,18 @@ tasks.withType(Test) {
     }
 }
 
-test {
-    useJUnitPlatform()
+task Parameterized_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("ParameterizedTest")
+    }
+}
+task jobSearch_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("jobSearch")
+    }
+}
+task resume_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("resume")
+    }
 }
