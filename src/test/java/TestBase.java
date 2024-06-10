@@ -15,12 +15,12 @@ import static com.codeborne.selenide.Selenide.open;
 public class TestBase {
     @BeforeAll
     static void beforeAll(){
-        Configuration.browserSize = System.getProperty("windowSize","1928x1080");
+        Configuration.browserSize = System.getProperty("browserSize","1928x1080");
         Configuration.browser = System.getProperty("browser","chrome");
         Configuration.browserVersion = System.getProperty("version","120.0");
         Configuration.baseUrl = System.getProperty("baseUrl","https://www.intexsoft.by");
         Configuration.pageLoadStrategy = "eager"; // не дожидаемся полной загрузки страницы сайта
-        Configuration.remote = System.getProperty("selenoidURL","https://user1:1234@selenoid.autotests.cloud/wd/hub"); // добавляем URL из Jenkins
+        Configuration.remote = System.getProperty("SelenoidURL","https://user1:1234@selenoid.autotests.cloud/wd/hub"); // добавляем URL из Jenkins
         DesiredCapabilities capabilities = new DesiredCapabilities();// добавляем видео запись
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
                 "enableVNC", true,

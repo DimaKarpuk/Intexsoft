@@ -47,3 +47,34 @@ ____
 <p align="center">  
 <a href="https://jenkins.autotests.cloud/job/Intexsoft_KarpukD/"><img src="readMe/screenshot/jenkinsIntexsoft.png" alt="Jenkins" width="950"/></a>  
 </p>
+
+
+### **Параметры сборки в Jenkins:**
+
+- *BROWSER (браузер, по умолчанию chrome)*
+- *BROWSER_VERSION (версия браузера, по умолчанию 122.0)*
+- *BROWSER_SIZE (размер окна браузера, по умолчанию 1928x1080)*
+- *SELENOID_URL (логин, пароль и адрес удаленного сервера Selenoid)*
+
+<a id="console"></a>
+## Команды для запуска из терминала
+___
+***Локальный запуск:***
+```bash  
+gradle clean
+gradle parameterized_test
+gradle jobSearch_test
+gradle resume_test
+```
+
+***Удалённый запуск через Jenkins:***
+```bash  
+clean test
+clean parameterized_test
+clean jobSearch_test
+clean resume_test
+"-DSelenoidURL=${SELENOID_URL}" 
+"-DBrowser=${BROWSER}" 
+"-DBrowserVersion=${BROWSER_VERSION}" 
+"-DBrowserSize=${BROWSER_SIZE}"
+```

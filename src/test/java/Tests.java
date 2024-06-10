@@ -16,7 +16,7 @@ public class Tests extends TestBase {
     MainPage mainPage = new MainPage();
     CareerPage careerPage = new CareerPage();
     ResumePage resumePage = new ResumePage();
-    @Tag("ParameterizedTest")
+    @Tag("parameterizedTest")
     @CsvFileSource(resources = "testData/IntexsoftHeaderСareer.csv")
     @ParameterizedTest(name = "Тест кликабельности категории {0} на главной странице")
     void parameterizedCareerTest(String testData, String expected){
