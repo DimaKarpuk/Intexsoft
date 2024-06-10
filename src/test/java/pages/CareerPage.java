@@ -22,9 +22,11 @@ public class CareerPage {
     public void tagAndTextTest(String tag, String text){
         $(withTagAndText(tag, text)).click();
     }
+    public void closeCheckBox(){
+        closeCheckBox.click();
+    }
     public void jobSelectionTest(){
         jobSelection.click();
-        closeCheckBox.click();
     }
     public void checkingTransitionVacancyTest(){
         checkingTransitionVacancy.shouldHave(text("AQA"));

@@ -9,6 +9,7 @@ import pages.CareerPage;
 import pages.MainPage;
 import pages.ResumePage;
 
+import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
@@ -57,6 +58,9 @@ public class Tests extends TestBase {
         });
         step("Кликаем на кнопку 'Гродно' в выпадающем списке", () -> {
             careerPage.tagAndTextTest("span","Гродно");
+        });
+        step("Закрываем выпадающий список выбора города", () ->{
+            careerPage.closeCheckBox();
         });
         step("Кликаем по результату AQA", () -> {
             careerPage.jobSelectionTest();
