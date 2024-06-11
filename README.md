@@ -86,7 +86,7 @@ ___
 
 ____
 <a id="telegram"></a>
-## <img alt="Allure" height="25" src="readMe/logo/telegram.svg" width="25"/></a> Уведомление в Telegram при помощи бота
+## <img alt="Allure" height="25" src="readMe/logo/Telegram_2019_Logo.svg" width="25"/></a> Уведомление в Telegram при помощи бота
 ____
 <p align="center">  
 <img title="Allure Overview Dashboard" src="readMe/screenshot/telegramReport.png" width="550">  
