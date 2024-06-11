@@ -1,5 +1,4 @@
 
-import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -9,7 +8,7 @@ import pages.CareerPage;
 import pages.MainPage;
 import pages.ResumePage;
 
-import static com.codeborne.selenide.Selenide.$;
+
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
@@ -17,6 +16,7 @@ public class Tests extends TestBase {
     MainPage mainPage = new MainPage();
     CareerPage careerPage = new CareerPage();
     ResumePage resumePage = new ResumePage();
+
     @Tag("parameterizedTest")
     @CsvFileSource(resources = "testData/IntexsoftHeaderСareer.csv")
     @ParameterizedTest(name = "Тест кликабельности категории {0} на главной странице")
@@ -37,7 +37,7 @@ public class Tests extends TestBase {
     @Tag("jobSearch")
     @DisplayName("Поиск вакансии в городе Гродно на позицию AQA")
     @Test
-    void applicantPathTest(){
+    void applicantPathTest() {
         step("Кликаем на кнопку 'стать частью команды'", () -> {
             mainPage.buttonToBecomePartOfTheTeamTest();
         });
@@ -48,18 +48,18 @@ public class Tests extends TestBase {
             careerPage.checkingPageRelevanceTest("Вакансии");
         });
         step("Кликаем по кнопке 'напровление' выпадающего списка", () -> {
-            careerPage.tagAndTextTest("span","Все направления");
+            careerPage.tagAndTextTest("span", "Все направления");
         });
-        step("Кликаем на позицию 'тестирование' в выпадающем списке", () ->{
-            careerPage.tagAndTextTest("span","Тестирование");
+        step("Кликаем на позицию 'тестирование' в выпадающем списке", () -> {
+            careerPage.tagAndTextTest("span", "Тестирование");
         });
         step("Кликаем по кнопке 'город' выпадающего списка", () -> {
-            careerPage.tagAndTextTest("span","Все города");
+            careerPage.tagAndTextTest("span", "Все города");
         });
         step("Кликаем на кнопку 'Гродно' в выпадающем списке", () -> {
-            careerPage.tagAndTextTest("span","Гродно");
+            careerPage.tagAndTextTest("span", "Гродно");
         });
-        step("Закрываем выпадающий список выбора города", () ->{
+        step("Закрываем выпадающий список выбора города", () -> {
             careerPage.closeCheckBox();
         });
         step("Кликаем по результату AQA", () -> {
@@ -72,32 +72,31 @@ public class Tests extends TestBase {
     @Tag("resume")
     @DisplayName("Заполнение резюме")
     @Test
-    public void setResume(){
-        Configuration.holdBrowserOpen = true;
+    public void setResumeTest() {
         step("Открываем страницу с резюме", () -> {
             open("https://www.intexsoft.by/resume-generator/");
         });
         step("Заполняем резюме", () -> {
-            resumePage.setFirstname("Дмитрий");
-            resumePage.setLastname("Карпук");
-            resumePage.setPosition("AQA");
-            resumePage.setPhone("+375 (33) 321 71 56");
-            resumePage.setEmail("karpukdima91@gmail.com");
-            resumePage.setTelegram("@DIM_KArp");
-            resumePage.setAddress("Беларусь/Гродно");
-            resumePage.setSalary("350");
-            resumePage.setSkills("Java, Selenide, JUnit, Jenkins, Allure, SQL");
-            resumePage.setEnglishLevel("A2");
+            resumePage.setFirstname("name");
+            resumePage.setLastname("lastname");
+            resumePage.setPosition("position");
+            resumePage.setPhone("phone");
+            resumePage.setEmail("email");
+            resumePage.setTelegram("telegram");
+            resumePage.setAddress("address");
+            resumePage.setSalary("salary");
+            resumePage.setSkills("skills");
+            resumePage.setEnglishLevel("englishLevel");
             resumePage.setUpload("photo.jpg");
-            resumePage.setSpecialization("Мануальное тестирование, Автоматизированное тестирование");
-            resumePage.setExperience("Старший инструктор-спасатель");
-            resumePage.setTermWork("с 2013 по текущее время");
-            resumePage.setPlaceWork("МЧС");
-            resumePage.setDescription("Помощь людям в сложных ситуациях");
-            resumePage.setEducationInstitution("ГрГУОР");
-            resumePage.setEducationSpeciality("Педагогическая деятельность");
-            resumePage.setEducationTerm("с 2008 по 2010");
-            resumePage.setNameResume("Резюме Карпука Д. на позицию AQA");
+            resumePage.setSpecialization("specialization");
+            resumePage.setExperience("experience");
+            resumePage.setTermWork("termWork");
+            resumePage.setPlaceWork("placeWork");
+            resumePage.setDescription("description");
+            resumePage.setEducationInstitution("educationInstitution");
+            resumePage.setEducationSpeciality("educationSpeciality");
+            resumePage.setEducationTerm("educationTerm");
+            resumePage.setNameResume("nameResume");
         });
     }
 }

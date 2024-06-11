@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$;
 public class CareerPage {
     public final SelenideElement
     buttonViewVacancies = $("[href='https://www.intexsoft.by/vacancies/?part=1']"),
-    checkingPageRelevance = $("h1"),
+    checkingPageRelevance = $(".hero__title"),
     jobSelection = $(withTagAndText("p","AQA")),
     closeCheckBox = $(".nested-checkbox-select__label"),
     checkingTransitionVacancy = $(".hero-single-career__header");

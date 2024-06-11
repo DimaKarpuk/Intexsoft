@@ -5,6 +5,7 @@ import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Selenide.$;
 
 public class ResumePage {
+    ResumeProperty applicant = new ResumeProperty();
     public final SelenideElement
             firstname = $("#firstname"),
             lastname = $("#lastname"),
@@ -27,83 +28,85 @@ public class ResumePage {
             educationTerm = $("#education-term"),
             nameResume = $(".bottom-section__name-resume");
 
-    public void setFirstname(String value) {
-        firstname.setValue(value);
+
+    public void setFirstname(String firstNameKey) {
+        firstname.setValue(ResumeProperty.getProperty(firstNameKey));
     }
 
-    public void setLastname(String value) {
-        lastname.setValue(value);
+    public void setLastname(String lastnameKey) {
+        lastname.setValue(ResumeProperty.getProperty(lastnameKey));
     }
 
-    public void setPosition(String value) {
-        position.setValue(value);
+    public void setPosition(String positionKey) {
+        position.setValue(ResumeProperty.getProperty(positionKey));
     }
 
-    public void setPhone(String value) {
-        phone.setValue(value);
+    public void setPhone(String phoneKey) {
+        phone.setValue(ResumeProperty.getProperty(phoneKey));
     }
 
-    public void setEmail(String value) {
-        email.setValue(value);
+    public void setEmail(String emailKey) {
+        email.setValue(ResumeProperty.getProperty(emailKey));
     }
 
-    public void setTelegram(String value) {
-        telegram.setValue(value);
+    public void setTelegram(String telegramKey) {
+        telegram.setValue(ResumeProperty.getProperty(telegramKey));
     }
 
-    public void setAddress(String value) {
-        address.setValue(value);
+    public void setAddress(String addressKey) {
+        address.setValue(ResumeProperty.getProperty(addressKey));
     }
 
-    public void setSalary(String value) {
-        salary.setValue(value);
+    public void setSalary(String salaryKey) {
+        salary.setValue(ResumeProperty.getProperty(salaryKey));
     }
 
-    public void setSkills(String value) {
-        skills.setValue(value);
+    public void setSkills(String skillsKey) {
+        skills.setValue(ResumeProperty.getProperty(skillsKey));
     }
 
-    public void setEnglishLevel(String value) {
-        englishLevel.setValue(value);
+    public void setEnglishLevel(String englishLevelKey) {
+        englishLevel.setValue(ResumeProperty.getProperty(englishLevelKey));
     }
 
     public void setUpload(String value) {
         upload.uploadFromClasspath(value);
     }
 
-    public void setSpecialization(String value) {
-        specialization.setValue(value);
+    public void setSpecialization(String specializationKey) {
+        specialization.setValue(ResumeProperty.getProperty(specializationKey));
     }
 
-    public void setExperience(String value) {
-        experience.setValue(value);
+    public void setExperience(String experienceKey) {
+        experience.setValue(ResumeProperty.getProperty(experienceKey));
     }
 
-    public void setTermWork(String value) {
-        termWork.setValue(value);
+    public void setTermWork(String termWorkKey) {
+        termWork.setValue(ResumeProperty.getProperty(termWorkKey));
     }
 
-    public void setPlaceWork(String value) {
-        placeWork.setValue(value);
+    public void setPlaceWork(String placeWorkKey) {
+        placeWork.setValue(ResumeProperty.getProperty(placeWorkKey));
     }
 
-    public void setDescription(String value) {
-        description.setValue(value);
+    public void setDescription(String descriptionKey) {
+        description.setValue(ResumeProperty.getProperty(descriptionKey));
     }
 
-    public void setEducationInstitution(String value) {
-        educationInstitution.setValue(value);
+    public void setEducationInstitution(String educationInstitutionKey) {
+        educationInstitution.setValue(ResumeProperty.getProperty(educationInstitutionKey));
     }
 
-    public void setEducationSpeciality(String value) {
-        educationSpeciality.setValue(value);
+    public void setEducationSpeciality(String educationSpecialityKey) {
+        educationSpeciality.setValue(ResumeProperty.getProperty(educationSpecialityKey));
     }
 
-    public void setEducationTerm(String value) {
-        educationTerm.setValue(value);
+    public void setEducationTerm(String educationTermKey) {
+        educationTerm.setValue(ResumeProperty.getProperty(educationTermKey));
     }
 
-    public void setNameResume(String value) {
-        nameResume.setValue(value);
+    public void setNameResume(String nameResumeKey) {
+        nameResume.setValue(ResumeProperty.getProperty(nameResumeKey));
     }
 }
+

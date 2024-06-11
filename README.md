@@ -1,5 +1,6 @@
 # Проект по автоматизации тестирования для компании [**intexsoft**](https://www.intexsoft.by/)
-
+## [<img align="center" src="readMe/logo/logo.png" height="20" width="120">](https://www.intexsoft.by/)
+СОВЕРШЕНСТВУЕМ БИЗНЕС С IT
 
 ## **Содержание:**
 ____
@@ -69,6 +70,32 @@ gradle resume_test
 
 ___
 <a id="allure"></a>
-## <img alt="Allure" height="25" src="media/logo/Allure.svg" width="25"/></a> <a name="Allure"></a>Allure [отчет](https://jenkins.autotests.cloud/job/011-mmuradov-JenkinsExercise-on-example-ZentistsTest/8/allure/)</a>
+## <img alt="Allure" height="25" src="readMe/logo/Allure_Report.svg" width="25"/></a> <a name="Allure"></a>Allure [отчет](https://jenkins.autotests.cloud/job/Intexsoft_KarpukD/12/allure/)</a>
 ___
+### *Основная страница отчёта*
 
+<p align="center">  
+<img title="Allure Overview Dashboard" src="readMe/screenshot/allureReport.png" width="850">  
+</p>  
+
+### *Тест-кейсы*
+
+<p align="center">  
+<img title="Allure Tests" src="readMe/screenshot/allureStep.png" width="850">  
+</p>
+
+____
+<a id="telegram"></a>
+## <img alt="Allure" height="25" src="readMe/logo/telegram.svg" width="25"/></a> Уведомление в Telegram при помощи бота
+____
+<p align="center">  
+<img title="Allure Overview Dashboard" src="readMe/screenshot/telegramReport.png" width="550">  
+</p>
+
+____
+<a id="video"></a>
+## <img alt="Selenoid" height="25" src="readMe/logo/Selenoid.svg" width="25"/></a> Примеры видео выполнения тестов на Selenoid
+____
+<p align="center">
+<img title="Selenoid Video" src="readMe/gif/6241d9c23517523b5b23ca2c0f842005.gif" width="550" height="350"  alt="video">   
+</p>
