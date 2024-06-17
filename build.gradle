@@ -42,6 +42,9 @@ tasks.withType(Test) {
         }
     }
 }
+test {
+    useJUnitPlatform()
+}
 
 task parameterized_test(type: Test) {
     useJUnitPlatform {

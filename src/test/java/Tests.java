@@ -40,6 +40,9 @@ public class Tests extends TestBase {
     @DisplayName("Поиск вакансии в городе Гродно на позицию AQA")
     @Test
     void applicantPathTest() {
+        step("Открываем главную страницу сайта", () -> {
+            mainPage.openPage();
+        });
         step("Кликаем на кнопку 'стать частью команды'", () -> {
             mainPage.buttonToBecomePartOfTheTeamTest();
         });
