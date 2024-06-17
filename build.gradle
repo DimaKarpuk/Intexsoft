@@ -45,7 +45,7 @@ tasks.withType(Test) {
 
 task parameterized_test(type: Test) {
     useJUnitPlatform {
-        includeTags("ParameterizedTest")
+        includeTags("parameterizedTest")
     }
 }
 task jobSearch_test(type: Test) {

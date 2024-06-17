@@ -8,7 +8,6 @@ import pages.CareerPage;
 import pages.MainPage;
 import pages.ResumePage;
 
-
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
@@ -21,6 +20,9 @@ public class Tests extends TestBase {
     @CsvFileSource(resources = "testData/IntexsoftHeaderСareer.csv")
     @ParameterizedTest(name = "Тест кликабельности категории {0} на главной странице")
     void parameterizedCareerTest(String testData, String expected){
+        step("Открываем главную странцу сайта", () -> {
+            mainPage.openPage();
+        });
         step("Проверяем что находимся на главной странице Intexsoft", () ->{
             mainPage.checkMainPageTest();
         });
@@ -83,6 +85,7 @@ public class Tests extends TestBase {
             resumePage.setPhone("phone");
             resumePage.setEmail("email");
             resumePage.setTelegram("telegram");
+            resumePage.setLinkedin("");
             resumePage.setAddress("address");
             resumePage.setSalary("salary");
             resumePage.setSkills("skills");

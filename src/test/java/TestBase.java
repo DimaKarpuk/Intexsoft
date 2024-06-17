@@ -10,7 +10,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.util.Map;
 
-import static com.codeborne.selenide.Selenide.open;
 
 public class TestBase {
     @BeforeAll
@@ -29,10 +28,6 @@ public class TestBase {
         Configuration.browserCapabilities = capabilities;
 
         SelenideLogger.addListener("allure", new AllureSelenide());
-    }
-    @BeforeEach
-    public void beforeEach(){
-        open("https://www.intexsoft.by/");
     }
     @AfterEach
     public void afterEach(){

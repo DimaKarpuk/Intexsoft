@@ -13,6 +13,7 @@ public class ResumePage {
             phone = $("#phone"),
             email = $("#email"),
             telegram = $("#telegram"),
+            linkedin = $("#Linkedin"),
             address = $("#address"),
             salary = $("#salary"),
             skills = $(".textarea-skills"),
@@ -51,6 +52,9 @@ public class ResumePage {
 
     public void setTelegram(String telegramKey) {
         telegram.setValue(ResumeProperty.getProperty(telegramKey));
+    }
+    public void setLinkedin(String linkedinKey) {
+        linkedin.setValue(ResumeProperty.getProperty(linkedinKey));
     }
 
     public void setAddress(String addressKey) {
