@@ -134,14 +134,8 @@ public class ResumePage {
     public void checkSetSalary(String salaryKey){
         salary.shouldHave(Condition.value(ResumeProperty.getProperty(salaryKey)));
     }
-    public void checkSetSkills(String skillsKey){
-        skills.shouldHave(Condition.value(ResumeProperty.getProperty(skillsKey)));
-    }
     public void checkSetEnglishLevel(String englishLevelKey){
         englishLevel.shouldHave(Condition.value(ResumeProperty.getProperty(englishLevelKey)));
-    }
-    public void checkSetSpecialization(String specializationKey){
-        specialization.shouldHave(Condition.value(ResumeProperty.getProperty(specializationKey)));
     }
     public void checkSetExperience(String experienceKey){
         experience.shouldHave(Condition.value(ResumeProperty.getProperty(experienceKey)));
@@ -151,9 +145,6 @@ public class ResumePage {
     }
     public void checkSetPlaceWork(String placeWorkKey){
         placeWork.shouldHave(Condition.value(ResumeProperty.getProperty(placeWorkKey)));
-    }
-    public void checkSetDescription(String descriptionKey){
-        description.shouldHave(Condition.value(ResumeProperty.getProperty(descriptionKey)));
     }
     public void checkSetEducationInstitution(String educationInstitutionKey){
         educationInstitution.shouldHave(Condition.value(ResumeProperty.getProperty(educationInstitutionKey)));
