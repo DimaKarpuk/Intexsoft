@@ -88,7 +88,6 @@ public class Tests extends TestBase {
             resumePage.setPhone("phone");
             resumePage.setEmail("email");
             resumePage.setTelegram("telegram");
-            resumePage.setLinkedin("");
             resumePage.setAddress("address");
             resumePage.setSalary("salary");
             resumePage.setSkills("skills");
@@ -104,5 +103,27 @@ public class Tests extends TestBase {
             resumePage.setEducationTerm("educationTerm");
             resumePage.setNameResume("nameResume");
         });
+        step("Проверяем заполнение резюме", () ->{
+            resumePage.checkSetFirst("name");
+            resumePage.checkSetLastname("lastname");
+            resumePage.checkSetPosition("position");
+            resumePage.checkSetPhone("phone");
+            resumePage.checkSetEmail("email");
+            resumePage.checkSetTelegram("telegram");
+            resumePage.checkSetAddress("address");
+            resumePage.checkSetSalary("salary");
+            resumePage.checkSetSkills("skills");
+            resumePage.checkSetEnglishLevel("englishLevel");
+            resumePage.checkSetSpecialization("specialization");
+            resumePage.checkSetExperience("experience");
+            resumePage.checkSetTermWork("termWork");
+            resumePage.checkSetPlaceWork("placeWork");
+            resumePage.checkSetDescription("description");
+            resumePage.checkSetEducationInstitution("educationInstitution");
+            resumePage.checkSetEducationSpeciality("educationSpeciality");
+            resumePage.checkSetEducationTerm("educationTerm");
+            resumePage.checkSetNameResume("nameResume");
+        });
     }
 }
+
