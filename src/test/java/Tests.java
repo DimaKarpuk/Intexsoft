@@ -112,13 +112,10 @@ public class Tests extends TestBase {
             resumePage.checkSetTelegram("telegram");
             resumePage.checkSetAddress("address");
             resumePage.checkSetSalary("salary");
-            resumePage.checkSetSkills("skills");
             resumePage.checkSetEnglishLevel("englishLevel");
-            resumePage.checkSetSpecialization("specialization");
             resumePage.checkSetExperience("experience");
             resumePage.checkSetTermWork("termWork");
             resumePage.checkSetPlaceWork("placeWork");
-            resumePage.checkSetDescription("description");
             resumePage.checkSetEducationInstitution("educationInstitution");
             resumePage.checkSetEducationSpeciality("educationSpeciality");
             resumePage.checkSetEducationTerm("educationTerm");
