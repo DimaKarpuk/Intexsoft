@@ -114,56 +114,56 @@ public class ResumePage {
         firstname.shouldHave(Condition.value(ResumeProperty.getProperty(firstNameKey)));
     }
     public void checkSetLastname(String lastNameKey){
-        firstname.shouldHave(Condition.value(ResumeProperty.getProperty(lastNameKey)));
+        lastname.shouldHave(Condition.value(ResumeProperty.getProperty(lastNameKey)));
     }
     public void checkSetPosition(String positionKey){
-        firstname.shouldHave(Condition.value(ResumeProperty.getProperty(positionKey)));
+        position.shouldHave(Condition.value(ResumeProperty.getProperty(positionKey)));
     }
     public void checkSetPhone(String phoneKey){
-        firstname.shouldHave(Condition.value(ResumeProperty.getProperty(phoneKey)));
+        phone.shouldHave(Condition.value(ResumeProperty.getProperty(phoneKey)));
     }
     public void checkSetEmail(String emailKey){
-        firstname.shouldHave(Condition.value(ResumeProperty.getProperty(emailKey)));
+        email.shouldHave(Condition.value(ResumeProperty.getProperty(emailKey)));
     }
     public void checkSetTelegram(String telegramKey){
-        firstname.shouldHave(Condition.value(ResumeProperty.getProperty(telegramKey)));
+        telegram.shouldHave(Condition.value(ResumeProperty.getProperty(telegramKey)));
     }
     public void checkSetAddress(String addressKey){
-        firstname.shouldHave(Condition.value(ResumeProperty.getProperty(addressKey)));
+        address.shouldHave(Condition.value(ResumeProperty.getProperty(addressKey)));
     }
     public void checkSetSalary(String salaryKey){
-        firstname.shouldHave(Condition.value(ResumeProperty.getProperty(salaryKey)));
+        salary.shouldHave(Condition.value(ResumeProperty.getProperty(salaryKey)));
     }
     public void checkSetSkills(String skillsKey){
-        firstname.shouldHave(Condition.value(ResumeProperty.getProperty(skillsKey)));
+        skills.shouldHave(Condition.value(ResumeProperty.getProperty(skillsKey)));
     }
     public void checkSetEnglishLevel(String englishLevelKey){
-        firstname.shouldHave(Condition.value(ResumeProperty.getProperty(englishLevelKey)));
+        englishLevel.shouldHave(Condition.value(ResumeProperty.getProperty(englishLevelKey)));
     }
     public void checkSetSpecialization(String specializationKey){
-        firstname.shouldHave(Condition.value(ResumeProperty.getProperty(specializationKey)));
+        specialization.shouldHave(Condition.value(ResumeProperty.getProperty(specializationKey)));
     }
     public void checkSetExperience(String experienceKey){
-        firstname.shouldHave(Condition.value(ResumeProperty.getProperty(experienceKey)));
+        experience.shouldHave(Condition.value(ResumeProperty.getProperty(experienceKey)));
     }
     public void checkSetTermWork(String termWorkKey){
-        firstname.shouldHave(Condition.value(ResumeProperty.getProperty(termWorkKey)));
+        termWork.shouldHave(Condition.value(ResumeProperty.getProperty(termWorkKey)));
     }
     public void checkSetPlaceWork(String placeWorkKey){
-        firstname.shouldHave(Condition.value(ResumeProperty.getProperty(placeWorkKey)));
+        placeWork.shouldHave(Condition.value(ResumeProperty.getProperty(placeWorkKey)));
     }
     public void checkSetDescription(String descriptionKey){
-        firstname.shouldHave(Condition.value(ResumeProperty.getProperty(descriptionKey)));
+        description.shouldHave(Condition.value(ResumeProperty.getProperty(descriptionKey)));
     }
     public void checkSetEducationInstitution(String educationInstitutionKey){
-        firstname.shouldHave(Condition.value(ResumeProperty.getProperty(educationInstitutionKey)));
+        educationInstitution.shouldHave(Condition.value(ResumeProperty.getProperty(educationInstitutionKey)));
     }
     public void checkSetEducationSpeciality(String educationSpecialityKey){
-        firstname.shouldHave(Condition.value(ResumeProperty.getProperty(educationSpecialityKey)));
+        educationSpeciality.shouldHave(Condition.value(ResumeProperty.getProperty(educationSpecialityKey)));
     }public void checkSetEducationTerm(String educationTermKey){
-        firstname.shouldHave(Condition.value(ResumeProperty.getProperty(educationTermKey)));
+        educationTerm.shouldHave(Condition.value(ResumeProperty.getProperty(educationTermKey)));
     }public void checkSetNameResume(String nameResumeKey){
-        firstname.shouldHave(Condition.value(ResumeProperty.getProperty(nameResumeKey)));
+        nameResume.shouldHave(Condition.value(ResumeProperty.getProperty(nameResumeKey)));
     }
 }
 
