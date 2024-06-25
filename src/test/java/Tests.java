@@ -20,19 +20,19 @@ public class Tests extends TestBase {
     @CsvFileSource(resources = "testData/IntexsoftHeaderСareer.csv")
     @ParameterizedTest(name = "Тест кликабельности категории {0} на главной странице")
     void parameterizedCareerTest(String testData, String expected){
-        step("Открываем главную странцу сайта", () -> {
+        step("Открываем главную страницу сайта", () -> {
             mainPage.openPage();
         });
         step("Проверяем что находимся на главной странице Intexsoft", () ->{
             mainPage.checkMainPageTest();
         });
-        step("Кликаем по выподающему списку", () -> {
+        step("Кликаем по выпадающему списку", () -> {
             mainPage.clickChoseMenu();
         });
-        step("Проверяем кликабельность элемента из выподающего списка", () -> {
+        step("Проверяем кликабельность элемента из выпадающего списка", () -> {
             mainPage.choseCategoryTest(testData);
         });
-        step("Проверяем результат проверки теста на кликабельнлсть", () -> {
+        step("Проверяем результат проверки теста на кликабельность", () -> {
             mainPage.expectValueTest(expected);
         });
     }
@@ -49,10 +49,10 @@ public class Tests extends TestBase {
         step("Кликаем на кнопку 'смотреть все вакансии'", () -> {
             careerPage.buttonViewVacanciesTest();
         });
-        step("Проверяем преход на страницу 'вакансии'", () -> {
+        step("Проверяем переход на страницу 'вакансии'", () -> {
             careerPage.checkingPageRelevanceTest("Вакансии");
         });
-        step("Кликаем по кнопке 'напровление' выпадающего списка", () -> {
+        step("Кликаем по кнопке 'направление' выпадающего списка", () -> {
             careerPage.tagAndTextTest("span", "Все направления");
         });
         step("Кликаем на позицию 'тестирование' в выпадающем списке", () -> {
@@ -123,4 +123,3 @@ public class Tests extends TestBase {
         });
     }
 }
-
